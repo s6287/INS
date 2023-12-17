@@ -1,0 +1,25 @@
+import hashlib
+
+# Calculate MD5 hash for the string 'Ismile'
+result = hashlib.md5(b'Ismile')
+# Calculate MD5 hash for the string 'Esmile'
+result1 = hashlib.md5(b'Esmile')
+
+# Printing the equivalent byte value.
+print("The byte equivalent of hash is:", end="")
+print(result.digest())
+
+print("The byte equivalent of hash is:", end="")
+print(result1.digest())
+
+#secure hash algorithm
+import hashlib
+
+# Get input from the user
+user_input = input("Enter the value to encode: ")
+
+# Calculate SHA-1 hash
+result = hashlib.sha1(user_input.encode())
+
+# Print the hexadecimal equivalent of SHA-1
+print("The hexadecimal equivalent of SHA1 is:", result.hexdigest())
